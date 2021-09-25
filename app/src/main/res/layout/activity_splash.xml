@@ -14,7 +14,7 @@
         android:layout_height="wrap_content"
         android:text="@string/Title"
         android:textColor="@color/white"
-        android:fontFamily="@font/antic"
+        android:fontFamily="@font/bungee"
         android:textStyle="bold"
         android:textSize="50sp"
         app:layout_constraintBottom_toBottomOf="parent"

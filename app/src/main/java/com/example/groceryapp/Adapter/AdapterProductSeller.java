@@ -31,12 +31,12 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
-
-public class AdapterProductSeller  extends RecyclerView.Adapter<AdapterProductSeller.HolderProductSeller> implements Filterable {
+//implements Filterable
+public class AdapterProductSeller  extends RecyclerView.Adapter<AdapterProductSeller.HolderProductSeller>  {
 
     private Context context;
     public ArrayList<ModelProduct> productList, filterList;
-    private FilterProduct filter;
+    //private FilterProduct filter;
 
     public AdapterProductSeller(Context context, ArrayList<ModelProduct> productList) {
         this.context = context;
@@ -44,6 +44,7 @@ public class AdapterProductSeller  extends RecyclerView.Adapter<AdapterProductSe
         this.filterList = productList;
     }
 
+    //create and initialize view holder
     @NonNull
     @Override
     public HolderProductSeller onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
@@ -51,6 +52,8 @@ public class AdapterProductSeller  extends RecyclerView.Adapter<AdapterProductSe
         return new HolderProductSeller(view);
     }
 
+
+    //bind(provide and assign value to view holder elements)
     @Override
     public void onBindViewHolder(@NonNull HolderProductSeller holder, int position) {
 
@@ -234,15 +237,17 @@ public class AdapterProductSeller  extends RecyclerView.Adapter<AdapterProductSe
         return productList.size();
     }
 
-    @Override
+    /*@Override
     public Filter getFilter() {
         if (filter == null)
         {
             filter = new FilterProduct(this,filterList);
         }
         return filter;
-    }
+    }*/
 
+
+    //connecting view element to view holder element (but still not values added)
     class HolderProductSeller extends RecyclerView.ViewHolder{
 
         private ImageView productIcon;

@@ -91,7 +91,7 @@ public class ProductsFragment extends Fragment {
             }
         });
 
-        productSearch.addTextChangedListener(new TextWatcher() {
+       /* productSearch.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence s, int start, int count, int after) {
 
@@ -110,7 +110,7 @@ public class ProductsFragment extends Fragment {
             public void afterTextChanged(Editable s) {
 
             }
-        });
+        });*/
     }
 
     private void loadFilteredProducts(String selected) {

@@ -30,8 +30,8 @@ import java.util.ArrayList;
 
 import p32929.androideasysql_library.Column;
 import p32929.androideasysql_library.EasyDB;
-
-public class AdapterProductUser extends RecyclerView.Adapter<AdapterProductUser.HolderProductUser> implements Filterable {
+//implements Filterable
+public class AdapterProductUser extends RecyclerView.Adapter<AdapterProductUser.HolderProductUser>  {
 
     private Context context;
     public ArrayList<ModelProduct> productsList,filterList;
@@ -263,14 +263,14 @@ public class AdapterProductUser extends RecyclerView.Adapter<AdapterProductUser.
         return productsList.size();
     }
 
-    @Override
+   /* @Override
     public Filter getFilter() {
         if (filter == null)
         {
             filter = new FilterProductUser(this,filterList);
         }
         return filter;
-    }
+    }*/
 
     class HolderProductUser extends RecyclerView.ViewHolder{
 

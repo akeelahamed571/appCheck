@@ -46,6 +46,9 @@ public class AddPromotionCodeActivity extends AppCompatActivity {
     private boolean isUpdating = false;
 
 
+
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

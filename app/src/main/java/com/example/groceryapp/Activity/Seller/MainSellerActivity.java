@@ -69,7 +69,7 @@ public class MainSellerActivity extends AppCompatActivity implements View.OnClic
         init();
 
         FirebaseUser user = auth.getCurrentUser();
-        if (!user.isEmailVerified()){
+       /* if (!user.isEmailVerified()){
             verificationTv.setVisibility(View.VISIBLE);
             verificationTv.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -89,7 +89,7 @@ public class MainSellerActivity extends AppCompatActivity implements View.OnClic
                     });
                 }
             });
-        }
+        }*/
 
         editProfile.setOnClickListener(this);
         addProduct.setOnClickListener(this);
